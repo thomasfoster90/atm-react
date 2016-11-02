@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './ga.png';
-
+import logo from './ga.png'
 import Account from './Account';
 
-class App extends Component {
+class Atm extends Component {
   render() {
     return (
       <div id="content">
@@ -11,12 +10,12 @@ class App extends Component {
           <div id="logo"><img src={logo} alt="General Assembly logo" /></div>
           <div id="title">Bank of GA</div>
         </div>
-        <Account />
-        <Account />
+        <Account name="Checking"/>
+        <Account name="Savings"/>
         <div className="clear"></div>
       </div>
     );
   }
 }
 
-export default App;
+export default Atm;
